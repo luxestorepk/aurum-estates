@@ -2,7 +2,7 @@
 var CFG={
  wa:"923716649231",
  email:"info@aurumestates.com",
- img:"images/", /* or full link: https://raw.githubusercontent.com/USER/REPO/main/images/ */
+ img:"", /* "" = images in same folder as index.html. If inside a folder use "images/" */
  rates:{USD:1,AED:3.67,GBP:0.79,EUR:0.92,PKR:280},
  sym:{USD:"$",AED:"AED ",GBP:"£",EUR:"€",PKR:"Rs. "}
 };
@@ -112,4 +112,4 @@ function contact(){
 layout();
 ({home:home,list:list,detail:detail,contact:contact})[document.body.dataset.page]();
 reveal();
-  
+var cs=document.createElement("script");cs.src="chat.js";document.body.appendChild(cs);
